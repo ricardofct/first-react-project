@@ -1,3 +1,6 @@
-import TodoApp from './todo-app.component';
+import { compose } from 'redux';
 
-export default TodoApp;
+import TodoApp from './todo-app.component';
+import TodoAppContainer from './todo-app.container';
+
+export default compose (TodoAppContainer)(TodoApp);
